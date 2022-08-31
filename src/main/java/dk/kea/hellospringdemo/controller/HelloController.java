@@ -6,13 +6,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @GetMapping("hellospring")
+    @GetMapping("/hellospring")
     public String helloSpring(){
         return "Hello Spring!";
     }
 
-    @GetMapping()
+    @GetMapping("/")
     public String defaultPage(){
         return "Godmorgen!";
     }
+
+
 }
